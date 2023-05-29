@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putcchar('a' + i);
+		putchar('a' + i);
 	}
 	for (j = 0; j < 26; j ++)
 	{
