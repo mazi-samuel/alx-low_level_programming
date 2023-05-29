@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar('a' + i);
 	}
-	for (j = 0; j < 26; j ++)
+	for (j = 0; j < 26; j++)
 	{
 		putchar('A' + j);
 	}
