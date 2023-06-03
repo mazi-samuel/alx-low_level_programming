@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * int _islower - checks for upper or lowercase of alphabets
  *
@@ -6,7 +5,7 @@
  */
 int _islower(int c)
 {
-	c;
+	char c;
 
 	if ('c' >= 65 && 'c' <= 90)
 	{
