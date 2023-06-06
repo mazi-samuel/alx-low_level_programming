@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * add - adds two numbers together
+ * @a: a parameter
+ * @b: a parameter
  *
  * Return: Always 0 (Success)
  */
