@@ -20,17 +20,21 @@ void times_table(void)
 			times = n * i;
 			if (!(times >= 10))
 			{
+				if (n > 0 && n <= 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(times + '0');
-				_putchar(',');
-				_putchar(' ');
 				n++;
 			}
 			else
 			{
-				_putchar('0' + (times / 10));
-				_putchar('0' + (times % 10));
 				_putchar(',');
 				_putchar(' ');
+				_putchar('0' + (times / 10));
+				_putchar('0' + (times % 10));
 				n++;
 			}
 		}
