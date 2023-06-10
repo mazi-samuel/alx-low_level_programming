@@ -14,13 +14,14 @@ int main(void)
 
 	for (i = 0; i < 1000;)
 	{
-		if ( i % 5 == 0)
+		sum =0;
+		if (i % 5 == 0)
 		{
 			sum += i;
-			if (sum >= 1024)
-				printf("%i", sum);
 		}
 		i++;
 	}
+	if (sum >= 1024)
+		printf("%i", sum);
 	return (0);
 }
