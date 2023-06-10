@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; i < 1000;)
 	{
-		sum =0;
+		sum = 0;
 		if (i % 5 == 0)
 		{
 			sum += i;
