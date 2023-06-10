@@ -19,7 +19,6 @@ int main(void)
 			sum += i;
 			if (sum >= 1024)
 				printf("%i", sum);
-			continue;
 		}
 		i++;
 	}
