@@ -21,10 +21,10 @@ int main(void)
 	for (i = 0; i <= 48; i++)
 	{
 		c = a + b;
-		printf("%i, ", c);
-		printf("\n");
+		printf("%i, %i, %i", a, b, c);
 		a = b;
 		b = c;
 	}
+	printf("\n");
 	return (0);
 }
