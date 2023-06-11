@@ -19,10 +19,10 @@ int main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
-			if (sum >= 1024)
-				printf("%i", sum);
 		}
 		i++;
 	}
+	if (sum >= 1024)
+		printf("%i", sum);
 	return (0);
 }
