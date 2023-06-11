@@ -7,22 +7,21 @@
  */
 int main(void)
 {
-	int a;
+	long a;
 
-	int b;
+	long b;
 
-	int c;
+	long c;
 
 	int i;
 
 	a = 1;
 	b = 2;
-	printf("%i, %i, ", a, b)
-
+	printf("%ld, %ld, ", a, b);
 	for (i = 0; i <= 98; i++)
 	{
 		c = a + b;
-		printf("%i", c);
+		printf("%ld, ", c);
 		a = b;
 		b = c;
 	}
