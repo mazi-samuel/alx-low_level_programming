@@ -24,5 +24,6 @@ int main(void)
 	}
 	if (sum >= 1024)
 		printf("%i", sum);
+	printf("\n");
 	return (0);
 }
