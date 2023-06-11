@@ -19,7 +19,7 @@ int main(void)
 	for (i = 0; i <= 48; i++)
 	{
 		c = a + b;
-		printf("%i", c);
+		printf("%i, ", c);
 		printf("\n");
 		a = b;
 		b = c;
