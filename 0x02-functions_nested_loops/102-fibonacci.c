@@ -13,6 +13,8 @@ int main(void)
 
 	int c;
 
+	int i;
+
 	a = 1;
 	b = 2;
 
