@@ -17,11 +17,12 @@ int main(void)
 
 	a = 1;
 	b = 2;
+	printf("%i, %i, ", a, b)
 
-	for (i = 0; i <= 48; i++)
+	for (i = 0; i <= 98; i++)
 	{
 		c = a + b;
-		printf("%i, %i, %i", a, b, c);
+		printf("%i", c);
 		a = b;
 		b = c;
 	}
