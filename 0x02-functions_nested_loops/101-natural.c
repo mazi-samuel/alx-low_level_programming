@@ -16,7 +16,7 @@ int main(void)
 
 	for (i = 0; i < 1000;)
 	{
-		if (i % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
 			if (sum >= 1024)
