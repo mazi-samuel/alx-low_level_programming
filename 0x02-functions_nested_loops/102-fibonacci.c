@@ -21,11 +21,11 @@ int main(void)
 	for (i = 0; i <= 47; i++)
 	{
 		c = a + b;
+		a = b;
+		b = c;
 		if (i != 47)
 		{
 			printf("%ld, ", c);
-			a = b;
-			b = c;
 		}
 		printf("%ld", c);
 	}
