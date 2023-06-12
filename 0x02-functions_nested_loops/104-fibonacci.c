@@ -18,10 +18,10 @@ int main(void)
 	a = 1;
 	b = 2;
 	printf("%ld, %ld, ", a, b);
-	for (i = 0; i <= 93; i++)
+	for (i = 4; i <= 98; i++)
 	{
 		c = a + b;
-		if (i != 93)
+		if (i != 98)
 		{
 			printf("%ld, ", c);
 			a = b;
