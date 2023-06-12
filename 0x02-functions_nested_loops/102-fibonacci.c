@@ -18,12 +18,16 @@ int main(void)
 	a = 1;
 	b = 2;
 	printf("%ld, %ld, ", a, b);
-	for (i = 0; i <= 48; i++)
+	for (i = 0; i <= 47; i++)
 	{
 		c = a + b;
-		printf("%ld, ", c);
-		a = b;
-		b = c;
+		if (i != 47)
+		{
+			printf("%ld, ", c);
+			a = b;
+			b = c;
+		}
+		printf("%ld", c);
 	}
 	printf("\n");
 	return (0);
