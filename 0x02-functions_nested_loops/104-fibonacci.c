@@ -17,18 +17,18 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	printf("%ld, %ld, ", a, b);
+	printf("%lf, %lf, ", a, b);
 	for (i = ; i <= 98; i++)
 	{
 		c = a + b;
 		if (i != 98)
 		{
-			printf("%ld, ", c);
+			printf("%lf, ", c);
 			a = b;
 			b = c;
 		}
 		else
-			printf("%ld", c);
+			printf("%lf", c);
 	}
 	printf("\n");
 	return (0);
