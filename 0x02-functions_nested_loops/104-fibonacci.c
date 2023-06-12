@@ -7,18 +7,18 @@
  */
 int main(void)
 {
-	long a;
+	double long a;
 
-	long b;
+	double long b;
 
-	long c;
+	double long c;
 
 	int i;
 
 	a = 1;
 	b = 2;
 	printf("%ld, %ld, ", a, b);
-	for (i = 4; i <= 98; i++)
+	for (i = ; i <= 98; i++)
 	{
 		c = a + b;
 		if (i != 98)
