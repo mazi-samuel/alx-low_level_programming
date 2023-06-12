@@ -19,7 +19,7 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	do{
+	do {
 		c = a + b;
 		if (c % 2 == 0)
 			sum += c;
