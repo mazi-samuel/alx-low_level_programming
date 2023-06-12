@@ -7,28 +7,28 @@
  */
 int main(void)
 {
-	long a;
+	unsigned long int a;
 
-	long b;
+	unsigned long int b;
 
-	long c;
+	unsigned long int c;
 
 	int i;
 
 	a = 1;
 	b = 2;
-	printf("%ld, %ld, ", a, b);
+	printf("%lu, %lu, ", a, b);
 	for (i = 0; i <= 98; i++)
 	{
 		c = a + b;
 		if (i != 98)
 		{
-			printf("%ld, ", c);
+			printf("%lu, ", c);
 			a = b;
 			b = c;
 		}
 		else
-			printf("%ld", c);
+			printf("%lu", c);
 	}
 	printf("\n");
 	return (0);
