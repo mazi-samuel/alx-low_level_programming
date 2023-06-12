@@ -19,14 +19,13 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	do
-	{
+	do{
 		c = a + b;
 		if (c % 2 == 0)
 			sum += c;
 		a = b;
 		b = c;
-	}while (c <= 4000000);
+	} while (c <= 4000000);
 	printf("%ld", sum);
 	printf("\n");
 	return (0);
