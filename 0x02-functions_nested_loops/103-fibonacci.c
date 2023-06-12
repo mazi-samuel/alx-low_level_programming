@@ -13,8 +13,6 @@ int main(void)
 
 	long c;
 
-	int i;
-
 	long sum;
 
 	sum = 0;
