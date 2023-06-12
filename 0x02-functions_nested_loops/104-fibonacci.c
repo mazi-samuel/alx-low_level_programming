@@ -18,7 +18,7 @@ int main(void)
 	a = 1;
 	b = 2;
 	printf("%Lf, %Lf, ", a, b);
-	for (i = ; i <= 98; i++)
+	for (i = 0; i <= 98; i++)
 	{
 		c = a + b;
 		if (i != 98)
