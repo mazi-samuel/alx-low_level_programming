@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<math.h>
 /**
  * main - Entry point
  *
@@ -7,28 +8,21 @@
  */
 int main(void)
 {
-	long int i;
+	long i, number, highest, square_root;
 
-	int j, highest;
+	number = 612852475143;
+
+	square_root = sqrt(number);
 
 	highest = 0;
-	for (i = 2; i <= 612852475143; i++)
+	for (i = 1; i <= square_root; i++)
 	{
-		if (612852475143 % i == 0)
+		if (number % i == 0)
 		{
-			for (j = 2; j <= i/2; j++)
-			{
-				if (i % j != 0)
-				{
-					if (i > highest)
-					{
-						highest = i;
-					}
-				}
-			}
+			highest = number / i;
 		}
 	}
-	printf("the highest prime factor is %i", highest);
+	printf("the highest prime factor is %ld", highest);
 	return (0);
 
 }
