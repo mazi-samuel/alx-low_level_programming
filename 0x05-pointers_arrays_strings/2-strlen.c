@@ -16,10 +16,10 @@ int _strlen(char *s)
 
 	for (i = 0; i <= s[i - 1]; i++)
 	{
-		if (s[i] != EOF)
+		if (s[i] != '\0')
 		{
 			x++;
 		}
 	}
-	return (x - 1);
+	return (x);
 }
