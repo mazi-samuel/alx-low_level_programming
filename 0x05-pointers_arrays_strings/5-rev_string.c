@@ -15,12 +15,9 @@ void rev_string(char *s)
 
 	while (s[lenght] != '\0')
 		lenght++;
-	for (i = 0; i < lenght; i++)
+	for (i = lenght - 1; i >= 0; i--)
 	{
-		temp = s[i];
-		s[i] = s[lenght - (lenght + 1)];
-		s[lenght - (lenght + 1)] = temp;
-		_putchar(temp);
+		_putchar(s[i])
 	}
 	_putchar('\n');
 }
