@@ -8,29 +8,21 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *combined;
+	char *ptr;
 
-	int i, j, len1, len2;
-	
-	combined = dest;
+	ptr = dest;
 
-	len1 = 0;
-	len2 = 0;
-
-	while (dest[len1] != '\0')
-		len1++;
-	while (src[len2] != '\0')
-		len2++;
-	for (i = 0; i < len1; i++)
+	while (*ptr != '\0')
 	{
-		combined += dest[i];
+		ptr++;
 	}
-	_putchar(' ');
-	for (j = 0; j < len2; j++)
+	while (*src != '\0')
 	{
-		combined += src[j];
+		*ptr = *src;
+		ptr++;
+		src++;
 	}
-	_putchar('\n');
-	return (combined);
+	*ptr = '\0';
+	return (dest);
 
 }
