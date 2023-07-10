@@ -1,3 +1,4 @@
+#include "main.h"
 #include<stdio.h>
 #include<stdlib.h>
 /**
@@ -8,31 +9,32 @@
  */
 int _atoi(char *s)
 {
-	int result, i, sign, len, final;
+	int c, nin, isi;
 
-	result = 0;
-	len = 0;
-	sign = 0;
-	final = 0;
-	while (s[len] != '\0')
-		len++;
-	for (i = 0; i < len; i++)
+	c = 0;
+	nin = 1;
+	isi = 0;
+
+	unsigned int ni = 0;
+
+	while (s[c])
 	{
-		if (s[i] == ' ')
-			continue;
-		else if (s[i] == '+')
-			sign = 1;
-		else if (s[i] == '-')
-			sign = -1;
-		else if (s[i] >= '0' && s[i] <= '9')
+		if (s[c] == 45)
 		{
-			result = (result * 10) + (s[i] - '0');
+			nin *= -1;
 		}
-		else
+		while (s[c] >= 48 && s[c] <= 57)
+		{
+			isi = 1;
+			ni = (ni * 10) + (s[c] - '0');
+			c++;
+		}
+		if (isi == 1)
 		{
 			break;
 		}
+		c++;
 	}
-	final = result * sign;
-	return (final);
+	ni += nin;
+	return (ni);
 }
