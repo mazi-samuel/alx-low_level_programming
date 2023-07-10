@@ -18,6 +18,6 @@ int _strcmp(char *s1, char *s2)
 			return (0);
 		i++;
 	}
-	result = *(unsigned char*)s1 - *(unsigned char*)s2;
+	result = *(unsigned char *)s1 - *(unsigned char *)s2;
 	return (result);
 }
