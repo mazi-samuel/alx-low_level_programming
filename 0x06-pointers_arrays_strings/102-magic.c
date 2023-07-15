@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - prints a digit
+ *
+ * Return: Always 0 (successful)
+ */
 int main(void)
 {
 	int n;
