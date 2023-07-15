@@ -17,8 +17,8 @@ char *rot13(char *n)
 		{
 			if (n[i] == input[j])
 			{
-				n[i] == output[j];
-				break:
+				n[i] = output[j];
+				break;
 			}
 		}
 	}
