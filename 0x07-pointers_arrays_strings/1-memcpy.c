@@ -3,6 +3,7 @@
  * _memcpy - a function that copies memory area
  * @dest: memory where it's stored
  * @src: memory where it's copied
+ * @n: an unsigned integer parameter
  *
  * Return: copied memory with nbyted changed
  */
