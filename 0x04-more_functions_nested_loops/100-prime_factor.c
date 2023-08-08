@@ -22,7 +22,7 @@ int main(void)
 			highest = number / i;
 		}
 	}
-	printf("the highest prime factor is %ld", highest);
+	printf("the highest prime factor is %ld\n", highest);
 	return (0);
 
 }
