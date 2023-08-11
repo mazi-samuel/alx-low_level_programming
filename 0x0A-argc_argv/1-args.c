@@ -7,5 +7,7 @@
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
+	(void)argv;
 	printf("%d\n", argc);
+	return (0);
 }
