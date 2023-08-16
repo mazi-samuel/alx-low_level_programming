@@ -1,1 +1,5 @@
-#define SIZE 1024
+/**
+ * defines a constant SIZE
+ */
+
+#ifndef SIZE 1024
