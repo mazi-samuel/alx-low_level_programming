@@ -4,8 +4,8 @@
  * @s: a pointer to a string
  *
  * Return: 1 if successful
- */  
- int _strlen_recursion(char *s)
+ */ 
+int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
 	{
